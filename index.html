@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container"> <!--INICIO DO CONTAINER-->
+
+        <div class="nome"> <!--INICIO NOME-->
+            <h2>Feedback do cliente</h2>
+            <p>
+                Adorariamos saber mais sobre sua esperiência como cliente. Sinta-se á vontade para compartilhar sugestões, ideias e o que mais achar relevante.
+            </p>
+        </div> <!--FIM NOME-->
+
+        <form autocomplete="off"> <!--INICIO FORMULÁRIO-->
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome">
+
+            <label for="email">Email <span class="asterisco">*</span></label>
+            <input class="margem-baixo" type="text" name="email" id="email" placeholder="Insira seu email">
+
+
+            <span class="servicos">Como você avaliaria nossos serviços? </span><span class="asterisco">*</span>
+
+        </form> <!--FIM FORMULÁRIO-->
+
+    </div> <!--FIM DO CONTAINER-->
+</body>
+</html>
