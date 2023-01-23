@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Formulário - Feedback</title>
@@ -11,55 +11,71 @@
         <div class="nome"> <!--INICIO NOME-->
             <h2>Feedback do cliente</h2>
             <p>
-                Adorariamos saber mais sobre sua esperiência como cliente. Sinta-se à vontade para compartilhar sugestões, ideias e o que mais achar relevante.
+                Adorariamos saber mais sobre sua experiência como cliente. Sinta-se à vontade para compartilhar sugestões, ideias e o que mais achar relevante.
             </p>
         </div> <!--FIM NOME-->
 
         <form autocomplete="off"> <!--INICIO FORMULÁRIO-->
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
 
-            <label for="sobrenome">Sobrenome</label>
-            <input type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome">
+            <div class="espaco-dados-pessoais"> <!--INICIO DADOS PESSOAIS-->
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
 
-            <label for="email">Email <span class="asterisco">*</span></label>
-            <input type="text" name="email" id="email" placeholder="Insira seu email">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome">
+
+                <label for="email">Email <span class="asterisco">*</span></label>
+                <input type="text" name="email" id="email" placeholder="Insira seu email">
+            </div> <!--FIM DADOS PESSOAIS-->
 
 
-            <span>Como você avaliaria nossos serviços? </span><span class="asterisco">*</span>
+            <div class="espaco-servicos"> <!--INICIO SERVIÇOS-->
+                <span>Como você avaliaria nossos serviços? </span><span class="asterisco">*</span>
 
-            <div class="espaco-radio">
-                <label>
-                    <input type="radio" name="servicos" id="servicos" value="excelente"> Excelente
-                </label>
-            </div>
+                <div class="espaco-radio">
+                    <label>
+                        <input type="radio" name="servicos" id="excelente"> Excelente
+                    </label>
+                </div>
 
-            <div class="espaco-radio">
-                <label>
-                    <input type="radio" name="servicos" id="muito-bom"> Muito Bom
-                </label>
-            </div>
+                <div class="espaco-radio">
+                    <label>
+                        <input type="radio" name="servicos" id="muito-bom"> Muito Bom
+                    </label>
+                </div>
 
-            <div class="espaco-radio">
-                <label>
-                    <input type="radio" name="servicos" id="bom"> Bom
-                </label>
-            </div>
+                <div class="espaco-radio">
+                    <label>
+                        <input type="radio" name="servicos" id="bom"> Bom
+                    </label>
+                </div>
 
-            <div class="espaco-radio">
-                <label>
-                    <input type="radio" name="servicos" id="justo"> Justo
-                </label>
-            </div>
+                <div class="espaco-radio">
+                    <label>
+                        <input type="radio" name="servicos" id="justo"> Justo
+                    </label>
+                </div>
 
-            <div class="espaco-radio">
-                <label>
-                    <input type="radio" name="servicos" id="ruim"> Ruim
-                </label>
-            </div>
+                <div class="espaco-radio">
+                    <label>
+                        <input type="radio" name="servicos" id="ruim"> Ruim
+                    </label>
+                </div>
+                
+            </div> <!--FIM SERVIÇOS-->
+
             
+            <div class="espaco-mensagem"> <!--INICIO MENSAGEM-->
+                <span>Descreva sua experiência</span>
+                
+                <label>
+                    <textarea name="mensagem" id="meensagem" cols="93" rows="13" placeholder="Insira seu texto"></textarea>
+                </label>
+            </div> <!--FIM MENSAGEM-->
 
-            <span>Descreva sua experiência</span>
+            <div class="botao"> <!--INICIO BOTÃO-->
+                <button type="submit">enviar</button>
+            </div> <!--FIM BOTÃO-->
 
         </form> <!--FIM FORMULÁRIO-->
 
