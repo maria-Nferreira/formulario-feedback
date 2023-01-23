@@ -49,7 +49,7 @@ label {
     margin-bottom: 0.3em;
 }
 
-input {
+input[type="text"] {
     width: 100%;
     height: 2.5em;
     margin-bottom: 1.3em;
@@ -65,12 +65,20 @@ input::placeholder {
     text-indent: 0.7em;
 }
 
-input.margem-baixo {
-    margin-bottom: 2em;
+.espaco-radio {
+    margin-top: 0.5em;
+    padding: 0.7em 0.5em;
+    border-radius: 0.3em;
+    background-color: #e7f0f7;
 }
 
-span.servicos {
-    font-size: 1em;
+input[type="radio"] {
+    border: none;
+    /*
+    border: solid #71bedd 1px;
+    */
 }
+
+
 
 /* -- FIM DO CONTAINER -- */

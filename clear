@@ -1,0 +1,131 @@
+[33mcommit 9d65f77afabacf66a589ad238101f5b62d230dbe[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Maria <mari4ferrei4@outlook.com>
+Date:   Mon Jan 23 01:04:00 2023 -0300
+
+    inserindo inputs de textos
+
+[1mdiff --git a/estilo.css b/estilo.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2d2ab1d[m
+[1m--- /dev/null[m
+[1m+++ b/estilo.css[m
+[36m@@ -0,0 +1,76 @@[m
+[32m+[m[32m* {[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mbody {[m
+[32m+[m[32m    font-family: Arial, Helvetica, sans-serif;[m
+[32m+[m[32m    font-size: 16px;[m
+[32m+[m[32m    background-color: #ecedf2;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/* -- INICIO DO CONTAINER -- */[m
+[32m+[m[32m.container {[m
+[32m+[m[32m    width: 700px;[m
+[32m+[m[32m    padding: 1em 2em;[m
+[32m+[m[32m    border-radius: 0.2em;[m
+[32m+[m[32m    background-color: white;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.nome {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.nome h2 {[m
+[32m+[m[32m    color: rgb(44, 36, 36);[m
+[32m+[m[32m    margin-bottom: 0.4em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.nome p {[m
+[32m+[m[32m    line-height: 1.6em;[m
+[32m+[m[32m    font-size: 1em;[m
+[32m+[m[32m    color: rgb(44, 36, 36);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32mform {[m
+[32m+[m[32m    margin-top: 1.2em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32mform span.asterisco {[m
+[32m+[m[32m    color: #71bedd;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mlabel {[m
+[32m+[m[32m    display: block;[m
+[32m+[m[32m    font-size: 1em;[m
+[32m+[m[32m    margin-bottom: 0.3em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32minput {[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m    height: 2.5em;[m
+[32m+[m[32m    margin-bottom: 1.3em;[m
+[32m+[m[32m    border-radius: 0.3em;[m
+[32m+[m[32m    border-top: solid #c4c4c4 1px;[m
+[32m+[m[32m    border-right: solid #c4c4c4 1px;[m
+[32m+[m[32m    border-left: solid #71bedd 2px;[m
+[32m+[m[32m    border-bottom: solid #71bedd 2px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32minput::placeholder {[m
+[32m+[m[32m    font-size: 1.1em;[m
+[32m+[m[32m    text-indent: 0.7em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32minput.margem-baixo {[m
+[32m+[m[32m    margin-bottom: 2em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mspan.servicos {[m
+[32m+[m[32m    font-size: 1em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* -- FIM DO CONTAINER -- */[m
+\ No newline at end of file[m
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..34ae019[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,35 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <title>Formulário</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="estilo.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div class="container"> <!--INICIO DO CONTAINER-->[m
+[32m+[m
+[32m+[m[32m        <div class="nome"> <!--INICIO NOME-->[m
+[32m+[m[32m            <h2>Feedback do cliente</h2>[m
+[32m+[m[32m            <p>[m
+[32m+[m[32m                Adorariamos saber mais sobre sua esperiência como cliente. Sinta-se á vontade para compartilhar sugestões, ideias e o que mais achar relevante.[m
+[32m+[m[32m            </p>[m
+[32m+[m[32m        </div> <!--FIM NOME-->[m
+[32m+[m
+[32m+[m[32m        <form autocomplete="off"> <!--INICIO FORMULÁRIO-->[m
+[32m+[m[32m            <label for="nome">Nome</label>[m
+[32m+[m[32m            <input type="text" name="nome" id="nome" placeholder="Insira seu nome">[m
+[32m+[m
+[32m+[m[32m            <label for="sobrenome">Sobrenome</label>[m
+[32m+[m[32m            <input type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome">[m
+[32m+[m
+[32m+[m[32m            <label for="email">Email <span class="asterisco">*</span></label>[m
+[32m+[m[32m            <input class="margem-baixo" type="text" name="email" id="email" placeholder="Insira seu email">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m            <span class="servicos">Como você avaliaria nossos serviços? </span><span class="asterisco">*</span>[m
+[32m+[m
+[32m+[m[32m        </form> <!--FIM FORMULÁRIO-->[m
+[32m+[m
+[32m+[m[32m    </div> <!--FIM DO CONTAINER-->[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
